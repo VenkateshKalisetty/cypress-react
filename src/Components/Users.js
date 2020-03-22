@@ -6,7 +6,7 @@ import getUserData from '../store/actions/action-user';
 class UsersComponent extends React.Component {
     constructor(props) {
         super(props);
-        this.props.getUserData();
+        if (!props.userState.users.length) { this.props.getUserData(); }
     }
 
     handleOnChange = (inputValue) => {
