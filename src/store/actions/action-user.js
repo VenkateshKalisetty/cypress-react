@@ -1,10 +1,10 @@
 import request from "superagent";
 
-export function getUserData() {
+const getUserData = () => {
     return (dispatch) => {
         dispatch(getUsersDataRequested());
         request
-            .get("https://jsonplaceholder.typicode.com/user")
+            .get("https://jsonplaceholder.typicode.com/users")
             .set("Accept", "application/json")
             .then((response) => {
                 dispatch(getUsersDataSuccess(response.body));
@@ -32,3 +32,5 @@ const getUsersDataFailed = () => ({
     inProgress: false,
     error: "Failed to get users data"
 });
+
+export default getUserData;
