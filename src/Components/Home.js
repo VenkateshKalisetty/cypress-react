@@ -6,7 +6,7 @@ export default class HomeComponent extends React.Component {
     return (
       <Container>
         <Row className="justify-content-md-center" style={{marginTop: "18%"}}>
-          <Col md="auto"><h1>Redux Example</h1></Col>
+          <Col md="auto"><h1>Cypress Example</h1></Col>
         </Row>
         <Row className="justify-content-md-center">
           <Col md="auto">(Counter and Users List)</Col>

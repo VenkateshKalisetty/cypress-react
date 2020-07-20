@@ -6,7 +6,7 @@ export default function HeaderComponent() {
   return (
     <>
       <Navbar bg="primary" variant="dark">
-        <Navbar.Brand>Redux Example</Navbar.Brand>
+        <Navbar.Brand>Cypress Example</Navbar.Brand>
         <Nav className="mr-auto">
           <LinkContainer exact to="/">
             <Nav.Link>Home</Nav.Link>
